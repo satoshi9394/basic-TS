@@ -36,7 +36,7 @@ const picture = new Picture(1, 'platzi session', PhotoOrientation.Square);
 album.addPicture(picture);
 console.log('album', album);
 // Accediendo a los miembros publicos
-picture.id = 100; // publico
-picture.title = 'Another title'; // publico
-album.title = 'Personal Activities'; // publico
+// picture.id = 100; // privado
+// picture.title = 'Another title'; // privado
+// album.title = 'Personal Activities'; // privado
 console.log('album', album);

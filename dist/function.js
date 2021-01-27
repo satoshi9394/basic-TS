@@ -16,11 +16,11 @@ createPitureNew('abeja', '20/05/10', '100x100');
 createPitureNew('abeja', '20/05/10');
 createPitureNew('abeja');
 // flat array funtion 
-var createPic = function (title, date, size) {
+let createPic = (title, date, size) => {
     return {
-        title: title,
-        date: date,
-        size: size
+        title,
+        date,
+        size
     };
 };
 console.table(createPic('abeja', '25/67/44', '100x100'));
@@ -28,14 +28,14 @@ console.table(createPic('abeja', '25/67/44', '100x100'));
 function handleError(code, msg) {
     // Procesamiento del codigo, msg
     if (msg === 'err') {
-        throw new Error(msg + ". Code error: " + code);
+        throw new Error(`${msg}. Code error: ${code}`);
     }
     else {
         return 'An error has occurred';
     }
 }
 try {
-    var result = handleError(200, 'OK'); // retorne un sting
+    let result = handleError(200, 'OK'); // retorne un sting
     console.info(result);
     result = handleError(400, 'err'); // retorne never
     console.log(result);

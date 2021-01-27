@@ -1,21 +1,21 @@
 "use strict";
 // Explicita
-var nullVariable;
+let nullVariable;
 nullVariable = null;
 // nullVariable = 1 // error
-var otherVariable = null;
+let otherVariable = null;
 otherVariable = 'test';
 console.info('nullVariable', nullVariable);
 console.info('otherVariable', otherVariable);
 // undefined
-var undefinedVariable = undefined;
+let undefinedVariable = undefined;
 // undefinedVariable = 'test';  // un error 
-var otherUndefined = undefined;
+let otherUndefined = undefined;
 otherUndefined = 'test';
 console.info('undefinedVariable', undefinedVariable);
 console.info('otherUndefined', otherUndefined);
 // null y undefined: Como subtipos
 // --strinctNullChecks
-var albumName;
+let albumName;
 // albumName = null;
 // albumName = undefined;

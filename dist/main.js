@@ -2,26 +2,29 @@
 console.log('hello word');
 // Number
 // explicito
-var phone;
+let phone;
 phone = 33245322454;
 // phone = 'hola'; //error
 //inferido
-var phoneNumber = 423562345;
+let phoneNumber = 423562345;
 // phoneNumber = false // error
-var hex = 0xf00d;
-var bin = 42;
-var octal = 3859;
-console.info("El telefono es: " + phone + " y el segundo es " + phoneNumber);
+let hex = 0xf00d;
+let bin = 0b0101010;
+let octal = 0o7423;
+console.info(`El telefono es: ${phone} y el segundo es ${phoneNumber}`);
 // Tipo: bolean
-var isPro = false;
-var isUserPro = false;
+let isPro = false;
+let isUserPro = false;
 isUserPro = true;
 // isUserPro = 1234 // error
 //Tipo: string
-var myName = 'Angel';
-var myLastName = 'Santillan';
+let myName = 'Angel';
+let myLastName = 'Santillan';
 // myLastName = 42353; // error
 //Tipo String template String
-var msj;
-msj = "\n  Mi nombre es: " + myName + " " + myLastName + " \n  con telefono: " + phone + "\n  ";
+let msj;
+msj = `
+  Mi nombre es: ${myName} ${myLastName} 
+  con telefono: ${phone}
+  `;
 console.info(msj);

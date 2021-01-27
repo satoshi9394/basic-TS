@@ -1,14 +1,14 @@
 "use strict";
 // Corchetes []
 // Tipo explicito
-var users;
+let users;
 users = ['Luixaviles', 'paparazzi', 'lensquee'];
 // users = ['fsd', 1, true]; // un errror
 // Tipo inferido
-var otherUsers = ['Luixaviles', 'paparazzi', 'lensquee'];
+let otherUsers = ['Luixaviles', 'paparazzi', 'lensquee'];
 // otherUsers = ['fsd', 1, true]; // error
 // Array<Tipo>
-var pictureTitle;
+let pictureTitle;
 pictureTitle = ['Luixaviles', 'paparazzi', 'lensquee'];
 // pictureTitle = ['fsd', 1, true]; // error
 // Accediendo a los valiores en un array
@@ -22,7 +22,7 @@ users.sort();
 console.table(users);
 // tuplas
 // ejemplo [1, 'user']
-var userNew;
+let userNew;
 userNew = [1, 'angel'];
 console.table(userNew);
 console.log('username:', userNew[1]);
@@ -30,11 +30,11 @@ console.log('index:', userNew[0]);
 console.log('username.length:', userNew[1].length);
 // tuplas con varios valores
 // id, username, isPro
-var userInfo;
+let userInfo;
 userInfo = [2, 'pedro', true];
 console.table(userInfo);
 //Arreglo de Tuplas
-var array = [];
+let array = [];
 array.push([1, 'luis']);
 array.push([2, 'pedro']);
 array.push([3, 'angel']);
